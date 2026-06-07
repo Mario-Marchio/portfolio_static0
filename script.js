@@ -19,7 +19,7 @@ const portfolioItems = [
     title: "Portfolio Un ultimo anno da raccontare ",
     description: "Portfolio scolastico che raccoglie i lavori migliori realizzati durante il mio ultimo anno",
     src: "assets/portfolio.pdf",
-    thumbnail: "assets/thumb portfolio1.jpeg",
+    thumbnail: "assets/thumb-portfolio1.jpeg",
     alt: "portfolio"
   },
   {
@@ -27,7 +27,7 @@ const portfolioItems = [
     title: "Depliant Ed.Sentimentale",
     description: "Depliant dedicato all’importanza della comunicazione nei rapporti",
     src: "assets/depliant francesca catapane.pdf",
-    thumbnail: "assets/thumb depliant.jpeg",
+    thumbnail: "assets/thumb-depliant.jpeg",
     alt: "Anteprima del video presentazione"
   },
   {
@@ -35,7 +35,7 @@ const portfolioItems = [
     title: "Sigla sul Neorealismo",
     description: "Video di montaggio dedicato al cinema neorealista italiano",
     src: "assets/sigla neorealismo.mp4",
-    thumbnail: "assets/thumb neorealismo.jpeg",
+    thumbnail: "assets/thumb-neorealismo.jpeg",
     alt: "Anteprima del documento PDF"
   },
   {
@@ -43,7 +43,7 @@ const portfolioItems = [
     title: "Portfolio Shooting Fotografico",
     description: "Portfolio fotografico che raccoglie una selezione di immagini realizzate durante uno shooting fotografico.",
     src: "assets/catapane francesca portfolio shooting con copertina.pdf",
-    thumbnail: "assets/thumb portfolio.png",
+    thumbnail: "assets/thumb-portfolio.png",
     alt: "Anteprima del progetto visual 02"
   },
   {
