@@ -41,7 +41,7 @@ const portfolioItems = [
   {
     type: "pdf",
     title: "Portfolio Shooting Fotografico",
-    description: "Portfolio fotografico che raccoglie una selezione di immagini realizzate durante uno shooting fotografico.",
+    description: "Portfolio fotografico che raccoglie una selezione di immagini realizzate durante uno shooting fotografico",
     src: "assets/portfolio-shooting-con-copertina.pdf",
     thumbnail: "assets/thumb-portfolio.webp",
     alt: "Anteprima del progetto visual 02"
@@ -115,11 +115,10 @@ const portfolioItems = [
    ===================================================== */
 
 const stagePresentation = {
-  type: "google-slides",
+  type: "pdf",
   title: "STAGE",
   description: "Produzione audio visiva",
-  embedUrl: "https://docs.google.com/presentation/d/e/2PACX-1vSSdJfb3iSdFt5WZaPHxCtfQn9P5ywV8kQ-_Y00lfLKj3Q8LN2lFJD88AXG52r2Hw/pubembed?start=false&loop=false&delayms=3000",
-  openUrl: "https://docs.google.com/presentation/d/e/2PACX-1vSSdJfb3iSdFt5WZaPHxCtfQn9P5ywV8kQ-_Y00lfLKj3Q8LN2lFJD88AXG52r2Hw/pubembed?start=false&loop=false&delayms=3000",
+  src: "assets/stage.pdf",
   thumbnail: "assets/thumb-presentazione.jpeg",
   alt: "Anteprima presentazione stage"
 };
@@ -174,7 +173,7 @@ function getTypeIcon(type) {
 function setupStagePresentationCard() {
   if (!stagePresentationCard) return;
 
-  if (stagePresentationThumb) {
+  if (stagePresentationThumb && stagePresentation.thumbnail && stagePresentation.thumbnail.trim() !== "") {
     stagePresentationThumb.src = stagePresentation.thumbnail;
     stagePresentationThumb.alt = stagePresentation.alt || stagePresentation.title;
   }
@@ -204,48 +203,43 @@ function openPresentationModal(item) {
 
   modalTitle.textContent = item.title;
   modalDescription.textContent = item.description;
-  modalType.textContent = "Google Presentazioni";
+  modalType.textContent = "PDF";
 
-  const hasValidEmbedUrl =
-    item.embedUrl &&
-    !item.embedUrl.includes("INSERISCI_QUI") &&
-    item.embedUrl.startsWith("https://docs.google.com/presentation/");
-
-  if (hasValidEmbedUrl) {
+  if (item.src && item.src.trim() !== "") {
     const frame = document.createElement("iframe");
-    frame.className = "google-slides-frame";
-    frame.src = item.embedUrl;
+    frame.src = item.src;
     frame.title = item.title;
-    frame.allowFullscreen = true;
     currentMediaElement = frame;
     modalMedia.appendChild(frame);
+
+    const openPdf = document.createElement("a");
+    openPdf.href = item.src;
+    openPdf.target = "_blank";
+    openPdf.rel = "noopener";
+    openPdf.className = "action-link";
+    openPdf.textContent = "Apri PDF";
+
+    const downloadPdf = document.createElement("a");
+    downloadPdf.href = item.src;
+    downloadPdf.download = "";
+    downloadPdf.className = "action-link";
+    downloadPdf.textContent = "Scarica PDF";
+
+    modalExtraActions.append(openPdf, downloadPdf);
   } else {
     const placeholder = document.createElement("div");
     placeholder.className = "google-slides-placeholder";
     placeholder.innerHTML = `
       <div class="google-slides-placeholder-card">
-        <img src="${item.thumbnail}" alt="${item.alt || item.title}">
+        ${item.thumbnail && item.thumbnail.trim() !== "" ? `<img src="${item.thumbnail}" alt="${item.alt || item.title}">` : ""}
         <div class="google-slides-placeholder-text">
-          Inserisci il link embed della tua Google Presentazione nel file script.js,
-          dentro <strong>stagePresentation.embedUrl</strong>.
+          Inserisci il percorso del PDF nel file script.js, dentro <strong>stagePresentation.src</strong>.
         </div>
       </div>
     `;
     currentMediaElement = placeholder;
     modalMedia.appendChild(placeholder);
   }
-
-  const openPresentation = document.createElement("a");
-  openPresentation.href =
-    item.openUrl && !item.openUrl.includes("INSERISCI_QUI")
-      ? item.openUrl
-      : item.embedUrl;
-  openPresentation.target = "_blank";
-  openPresentation.rel = "noopener";
-  openPresentation.className = "action-link";
-  openPresentation.textContent = "Apri presentazione";
-
-  modalExtraActions.append(openPresentation);
 
   modal.classList.add("is-open");
   modal.setAttribute("aria-hidden", "false");
