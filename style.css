@@ -70,7 +70,11 @@ a:focus-visible {
   background: rgba(9, 9, 11, 0.72);
   backdrop-filter: blur(18px);
 }
-
+.stage-pill {
+  width: fit-content;
+  align-self: flex-start;
+  padding: 0.42rem 0.68rem;
+}
 .brand {
   display: inline-flex;
   align-items: center;
