@@ -34,7 +34,7 @@ const portfolioItems = [
     type: "video",
     title: "Sigla sul Neorealismo",
     description: "Video di montaggio dedicato al cinema neorealista italiano",
-    src: "assets/sigla neorealismo.mp4",
+    src: "assets/sigla-neorealismo.mp4",
     thumbnail: "assets/thumb-neorealismo.webp",
     alt: "Anteprima del documento PDF"
   },
@@ -50,7 +50,7 @@ const portfolioItems = [
     type: "video",
     title: "Video Shoa",
     description: "Video dedicato alla Shoah, realizzato attraverso immagini del percorso di visita al Memoriale di Firenze e l'intervista alla sopravvissuta Kitty Braun",
-    src: "assets/catapane francesca shoa.mp4",
+    src: "assets/shoa.mp4",
     thumbnail: "assets/thumb-memoriale.webp",
     alt: "Anteprima del design portfolio 03"
   },
@@ -72,7 +72,7 @@ const portfolioItems = [
     type: "video",
     title: "Video Fiesole",
     description: "Video commemorativo dedicato ai Tre Martiri di Fiesole",
-    src: "assets/catapane_francesca_fiesole.mp4",
+    src: "assets/fiesole.mp4",
     thumbnail: "assets/thumb-fiesole.webp",
     alt: "Anteprima progetto extra 05"
   },
@@ -80,7 +80,7 @@ const portfolioItems = [
     type: "video",
     title: "Video sulla sensibilizzazione del Femminicidio",
     description: "Video di sensibilizzazione sul tema del femminicidio",
-    src: "assets/thumb femminicidio.webp",
+    src: "assets/femminicidio.mp4",
     thumbnail: "assets/thumb-ultimo-video.webp",
     alt: "Anteprima PDF extra 07"
   },
