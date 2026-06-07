@@ -19,15 +19,15 @@ const portfolioItems = [
     title: "Portfolio Un ultimo anno da raccontare ",
     description: "Portfolio scolastico che raccoglie i lavori migliori realizzati durante il mio ultimo anno",
     src: "assets/portfolio.pdf",
-    thumbnail: "assets/thumb-portfolio1.jpeg",
+    thumbnail: "assets/thumb-portfolio1.webp",
     alt: "portfolio"
   },
   {
     type: "pdf",
     title: "Depliant Ed.Sentimentale",
     description: "Depliant dedicato all’importanza della comunicazione nei rapporti",
-    src: "assets/depliant francesca catapane.pdf",
-    thumbnail: "assets/thumb-depliant.jpeg",
+    src: "assets/depliant-francesca-catapane.pdf",
+    thumbnail: "assets/thumb-depliant.webp",
     alt: "Anteprima del video presentazione"
   },
   {
@@ -35,15 +35,15 @@ const portfolioItems = [
     title: "Sigla sul Neorealismo",
     description: "Video di montaggio dedicato al cinema neorealista italiano",
     src: "assets/sigla neorealismo.mp4",
-    thumbnail: "assets/thumb-neorealismo.jpeg",
+    thumbnail: "assets/thumb-neorealismo.webp",
     alt: "Anteprima del documento PDF"
   },
   {
     type: "pdf",
     title: "Portfolio Shooting Fotografico",
     description: "Portfolio fotografico che raccoglie una selezione di immagini realizzate durante uno shooting fotografico.",
-    src: "assets/catapane francesca portfolio shooting con copertina.pdf",
-    thumbnail: "assets/thumb-portfolio.png",
+    src: "assets/portfolio-shooting-con-copertina.pdf",
+    thumbnail: "assets/thumb-portfolio.webp",
     alt: "Anteprima del progetto visual 02"
   },
   {
@@ -51,7 +51,7 @@ const portfolioItems = [
     title: "Video Shoa",
     description: "Video dedicato alla Shoah, realizzato attraverso immagini del percorso di visita al Memoriale di Firenze e l'intervista alla sopravvissuta Kitty Braun",
     src: "assets/catapane francesca shoa.mp4",
-    thumbnail: "assets/thumb memoriale.jpeg",
+    thumbnail: "assets/thumb-memoriale.webp",
     alt: "Anteprima del design portfolio 03"
   },
 
@@ -65,7 +65,7 @@ const portfolioItems = [
     title: "Articolo DCA",
     description: "Articolo informativo sui disturbi del comportamento alimentare",
     src: "assets/DCA.pdf",
-    thumbnail: "assets/copertina dca.jpeg",
+    thumbnail: "assets/copertina-dca.webp",
     alt: "Anteprima progetto extra 04"
   },
   {
@@ -73,23 +73,23 @@ const portfolioItems = [
     title: "Video Fiesole",
     description: "Video commemorativo dedicato ai Tre Martiri di Fiesole",
     src: "assets/catapane_francesca_fiesole.mp4",
-    thumbnail: "assets/thumb fiesole.jpeg",
+    thumbnail: "assets/thumb-fiesole.webp",
     alt: "Anteprima progetto extra 05"
   },
   {
     type: "video",
     title: "Video sulla sensibilizzazione del Femminicidio",
     description: "Video di sensibilizzazione sul tema del femminicidio",
-    src: "assets/thumb femminicidio.jpeg",
-    thumbnail: "assets/thumb ultimo video.jpeg",
+    src: "assets/thumb femminicidio.webp",
+    thumbnail: "assets/thumb-ultimo-video.webp",
     alt: "Anteprima PDF extra 07"
   },
   {
     type: "pdf",
     title: "Locandina di Judo",
     description: "Locandina realizzata per pubblicizzare uno stage di judo con il Maestro Riccardo Caldarelli",
-    src: "assets/locandina stage caldarelli.pdf",
-    thumbnail: "assets/copertina judo.jpeg",
+    src: "assets/locandina-stage-caldarelli.pdf",
+    thumbnail: "assets/copertina-judo.webp",
     alt: "Anteprima PDF extra 07"
   },
 
