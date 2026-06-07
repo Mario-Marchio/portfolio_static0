@@ -116,11 +116,11 @@ const portfolioItems = [
 
 const stagePresentation = {
   type: "google-slides",
-  title: "Presentazione Stage",
-  description: "Qui puoi descrivere la tua esperienza di stage o alternanza scuola-lavoro. Cambia questo testo direttamente dal file script.js.",
-  embedUrl: "https://docs.google.com/presentation/d/e/2PACX-1vQ4ptPkppTC5r1OHJZUkF-tozlRGpeA98YK8aDIJlpQYP7v0sgFvDaxpzfW_nF9ygNlX-Dohb99qKZS/embed?start=false&loop=false&delayms=3000",
-  openUrl: "https://docs.google.com/presentation/d/e/2PACX-1vQ4ptPkppTC5r1OHJZUkF-tozlRGpeA98YK8aDIJlpQYP7v0sgFvDaxpzfW_nF9ygNlX-Dohb99qKZS/pub?start=false&loop=false&delayms=3000",
-  thumbnail: "assets/thumb-stage.svg",
+  title: "STAGE",
+  description: "Produzione audio visiva",
+  embedUrl: "https://docs.google.com/presentation/d/e/2PACX-1vSSdJfb3iSdFt5WZaPHxCtfQn9P5ywV8kQ-_Y00lfLKj3Q8LN2lFJD88AXG52r2Hw/pubembed?start=false&loop=false&delayms=3000",
+  openUrl: "https://docs.google.com/presentation/d/e/2PACX-1vSSdJfb3iSdFt5WZaPHxCtfQn9P5ywV8kQ-_Y00lfLKj3Q8LN2lFJD88AXG52r2Hw/pubembed?start=false&loop=false&delayms=3000",
+  thumbnail: "assets/thumb-presentazione.jpeg",
   alt: "Anteprima presentazione stage"
 };
 

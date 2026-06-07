@@ -4,13 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
+
+  <link rel="icon" type="image/jpeg" href="assets/profilo2.jpeg" />
+  <link rel="apple-touch-icon" href="assets/profilo2.jpeg" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#" aria-label="Torna all'inizio">
-      <span class="brand-mark">P</span>
-      <span class="brand-text">Portfolio</span>
+     <img src="assets/profilo2.jpeg" alt=""  class="brand-mark">
     </a>
 
     <nav class="nav" aria-label="Navigazione principale">
@@ -22,21 +25,21 @@
 
   <main id="home">
     <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">Portfolio statico · HTML CSS JS</p>
-      <h1 id="hero-title">I miei lavori, raccolti in una galleria semplice e responsive.</h1>
+      <p class="eyebrow">Portfolio creativo</p>
+      <h1 id="hero-title">Francesca Catapane</h1>
       <p class="hero-text">
-        Clicca su una card per aprire foto, video o PDF in una finestra centrale.
-        Tutti i contenuti sono locali e modificabili dal file <strong>script.js</strong>.
+        una raccolta di progetti, immagini e video che raccontano il mio percorso creativo
       </p>
     </section>
 
     <section id="portfolio" class="portfolio-section" aria-labelledby="portfolio-title">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Galleria</p>
-          <h2 id="portfolio-title">Progetti selezionati</h2>
+     <h2 id="portfolio-title" class="eyebrow">Progetti selezionati</h2>
+     <p class="hero-text">
+        sfoglia una selezione dei miei lavori
+      </p>    
         </div>
-        <p class="hint">Scorri con dito, mouse o trackpad.</p>
       </div>
 
       <div id="gallery" class="gallery" aria-live="polite"></div>
@@ -49,11 +52,10 @@
     </section>
 
     <section id="stage" class="contact-section stage-section" aria-labelledby="stage-title">
-      <p class="eyebrow">Alternanza scuola-lavoro / Stage</p>
-      <h2 id="stage-title">Presentazione esperienza</h2>
+      <p class="eyebrow">formazione scuola-lavoro </p>
+      <h2 id="stage-title">esperienza presso imaginem</h2>
       <p>
-        Qui puoi inserire la presentazione Google del tuo stage o della tua alternanza scuola-lavoro.
-        La card rimane a sinistra e apre la presentazione direttamente nella finestra centrale.
+        Percorso di formazione presso imaginem, dedicato alla scoperta delle fasi organizzative e produttive che precedono la realizzazione di un film
       </p>
 
       <button id="stagePresentationCard" class="stage-card" type="button" aria-label="Apri presentazione stage">
