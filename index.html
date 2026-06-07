@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Torna all'inizio">
+      <span class="brand-mark">P</span>
+      <span class="brand-text">Portfolio</span>
+    </a>
+
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#stage">Stage</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Portfolio statico · HTML CSS JS</p>
+      <h1 id="hero-title">I miei lavori, raccolti in una galleria semplice e responsive.</h1>
+      <p class="hero-text">
+        Clicca su una card per aprire foto, video o PDF in una finestra centrale.
+        Tutti i contenuti sono locali e modificabili dal file <strong>script.js</strong>.
+      </p>
+    </section>
+
+    <section id="portfolio" class="portfolio-section" aria-labelledby="portfolio-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Galleria</p>
+          <h2 id="portfolio-title">Progetti selezionati</h2>
+        </div>
+        <p class="hint">Scorri con dito, mouse o trackpad.</p>
+      </div>
+
+      <div id="gallery" class="gallery" aria-live="polite"></div>
+
+      <div class="show-more-wrap">
+        <button id="showMoreBtn" class="show-more-btn" type="button">
+          Mostra altro
+        </button>
+      </div>
+    </section>
+
+    <section id="stage" class="contact-section stage-section" aria-labelledby="stage-title">
+      <p class="eyebrow">Alternanza scuola-lavoro / Stage</p>
+      <h2 id="stage-title">Presentazione esperienza</h2>
+      <p>
+        Qui puoi inserire la presentazione Google del tuo stage o della tua alternanza scuola-lavoro.
+        La card rimane a sinistra e apre la presentazione direttamente nella finestra centrale.
+      </p>
+
+      <button id="stagePresentationCard" class="stage-card" type="button" aria-label="Apri presentazione stage">
+        <img id="stagePresentationThumb" src="assets/thumb-stage.svg" alt="Anteprima presentazione stage" draggable="false">
+        <span class="stage-card-content">
+          <span class="pill">▣ Presentazione</span>
+          <strong id="stagePresentationTitle">Presentazione Stage</strong>
+          <small id="stagePresentationDescription">
+            Apri la presentazione Google collegata a questa card.
+          </small>
+        </span>
+      </button>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-actions">
+        <button id="fullscreenBtn" class="icon-button" type="button" aria-label="Apri a schermo intero">
+          ⛶
+        </button>
+        <button id="closeModalBtn" class="icon-button" type="button" aria-label="Chiudi finestra">
+          ✕
+        </button>
+      </div>
+
+      <!-- Freccia elemento precedente -->
+      <button id="prevModalBtn" class="modal-nav-btn modal-nav-btn--prev" type="button" aria-label="Elemento precedente">
+        ‹
+      </button>
+
+      <!-- Freccia elemento successivo -->
+      <button id="nextModalBtn" class="modal-nav-btn modal-nav-btn--next" type="button" aria-label="Elemento successivo">
+        ›
+      </button>
+
+      <div id="modalMedia" class="modal-media"></div>
+
+      <article class="modal-info">
+        <p id="modalType" class="modal-type"></p>
+        <h3 id="modal-title"></h3>
+        <p id="modalDescription"></p>
+        <div id="modalExtraActions" class="modal-extra-actions"></div>
+      </article>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
